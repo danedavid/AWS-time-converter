@@ -1,0 +1,19 @@
+{
+  "name": "Time Converter",
+  "version": "1.0",
+  "description": "Converts times to Local time",
+  "manifest_version": 2,
+  "page_action": {
+    "default_title": "My first extension"
+  },
+  "background": {
+    "scripts":["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "declarativeContent",
+    "https://console.aws.amazon.com/"
+  ]
+}
