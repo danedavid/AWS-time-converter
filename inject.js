@@ -2,15 +2,6 @@
   const timerID = setInterval(() => {
     let flag = true;
 
-    // if (
-    //   document.querySelector('*[data-id="CreatedAt"]') &&
-    //   document.querySelector('*[data-id="CreatedAt"]').querySelector('span') &&
-    //   document.querySelector('*[data-id="CreatedAt"]').querySelector('span').innerText.includes('IST')
-    // ) {
-    //   console.log(document.querySelector('*[data-id="CreatedAt"]').querySelector('span').innerText.includes('IST'))
-    //   clearInterval(timerID);
-    //   return;
-    // }
     document.querySelectorAll('*[data-id="CreatedAt"]').forEach(item => {
       const headerElement = item.querySelector('span');
       headerElement.innerText = headerElement.innerText.replace('UTC', 'IST');
